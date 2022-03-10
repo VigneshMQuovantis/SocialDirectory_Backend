@@ -6,14 +6,17 @@ namespace RepositoryLayer.Services
 {
     using CommonLayer.UserModels;
     using Microsoft.Extensions.Configuration;
+    using Microsoft.IdentityModel.Tokens;
     using RepositoryLayer.Context;
     using RepositoryLayer.Entities;
     using RepositoryLayer.ExceptionHandling;
     using RepositoryLayer.Intefaces;
     using System;
     using System.Collections.Generic;
+    using System.IdentityModel.Tokens.Jwt;
     using System.Linq;
     using System.Net;
+    using System.Security.Claims;
     using System.Text;
     using System.Threading.Tasks;
 
@@ -44,7 +47,7 @@ namespace RepositoryLayer.Services
         /// Password encryption class
         /// </summary>
         /// <param name="password"></param>
-        /// <returns></returns>
+        /// <returns>Returns encrypted password</returns>
         /// <exception cref="CustomException"></exception>
         public static string EncryptedPassword(string password)
         {
@@ -62,10 +65,41 @@ namespace RepositoryLayer.Services
         }
 
         /// <summary>
+        /// JWTs the token generate.
+        /// </summary>
+        /// <param name="email">The email.</param>
+        /// <param name="userId">The user identifier.</param>
+        /// <returns>Json Web Token</returns>
+        public string JwtTokenGenerate(string email, long userId)
+        {
+            try
+            {
+                var loginTokenHandler = new JwtSecurityTokenHandler();
+                var loginTokenKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(this.config[("Jwt:key")]));
+                var loginTokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new Claim[]
+                    {
+                        new Claim(ClaimTypes.Email, email),
+                        new Claim("UserId", userId.ToString())
+                    }),
+                    Expires = DateTime.UtcNow.AddMinutes(15),
+                    SigningCredentials = new SigningCredentials(loginTokenKey, SecurityAlgorithms.HmacSha256Signature)
+                };
+                var token = loginTokenHandler.CreateToken(loginTokenDescriptor);
+                return loginTokenHandler.WriteToken(token);
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.BadRequest, "Cannot generate json web token since claims not added");
+            }
+        }
+
+        /// <summary>
         /// User Registration of repository layer
         /// </summary>
         /// <param name="model"></param>
-        /// <returns></returns>
+        /// <returns>Registration response</returns>
         /// <exception cref="CustomException"></exception>
         public RegistrationResponseModel Registration(UserEntities model)
         {
@@ -104,6 +138,42 @@ namespace RepositoryLayer.Services
             catch (Exception ex)
             {
                 throw new CustomException(HttpStatusCode.BadRequest, "Details Missing");
+            }
+        }
+
+        /// <summary>
+        /// Logins the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
+        /// <exception cref="RepositoryLayer.ExceptionHandling.CustomException">User Credentiatials wrong</exception>
+        public LoginResponseModel Login(LoginModel model)
+        {
+            try
+            {
+                var loginValidation = this.context.UserTable.FirstOrDefault(e => e.EmailId == model.EmailId && e.Password == EncryptedPassword(model.Password));
+                if (loginValidation != null)
+                {
+                    var token = this.JwtTokenGenerate(model.EmailId, loginValidation.UserId);
+                    LoginResponseModel response = new()
+                    {
+                        UserId = loginValidation.UserId,
+                        Name = loginValidation.Name,
+                        EmailId = loginValidation.EmailId,
+                        DateOfBirth = loginValidation.DateOfBirth,
+                        Gender = loginValidation.Gender,
+                        MobileNumber = loginValidation.MobileNumber,    
+                        Interest = loginValidation.Interest,
+                        Location = loginValidation.Location,
+                        JwtToken = token
+                    };
+                    return response;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.Unauthorized, "User Credentiatials wrong");
             }
         }
     }

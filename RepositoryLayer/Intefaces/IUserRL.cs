@@ -17,6 +17,18 @@ namespace RepositoryLayer.Intefaces
     /// </summary>
     public interface IUserRL
     {
+        /// <summary>
+        /// Registrations the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
         RegistrationResponseModel Registration(UserEntities model);
+
+        /// <summary>
+        /// Logins the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
+        LoginResponseModel Login(LoginModel model);
     }
 }

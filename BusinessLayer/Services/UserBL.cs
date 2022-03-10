@@ -45,5 +45,23 @@ namespace BusinessLayer.Services
                 throw;
             }
         }
+
+        /// <summary>
+        /// Logins the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns>Login response from repository layer</returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public LoginResponseModel Login(LoginModel model)
+        {
+            try
+            {
+                return this.userRL.Login(model);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }
