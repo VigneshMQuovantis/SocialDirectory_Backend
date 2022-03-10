@@ -18,6 +18,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<SocialDirectoryContext>(opts => opts.UseSqlServer(builder.Configuration.GetConnectionString("SocialDirectoryDB")));
 builder.Services.AddTransient<IUserBL, UserBL>();
 builder.Services.AddTransient<IUserRL, UserRL>();
+builder.Services.AddTransient<IContactDetailsBL, ContactDetailsBL>();
+builder.Services.AddTransient<IContactDetailsRL, ContactDetailsRL>();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

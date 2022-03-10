@@ -24,6 +24,10 @@ namespace BusinessLayer.Services
         /// </summary>
         private readonly IUserRL userRL;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserBL"/> class.
+        /// </summary>
+        /// <param name="userRl">The user rl.</param>
         public UserBL(IUserRL userRl)
         {
             this.userRL = userRl;

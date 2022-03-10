@@ -26,6 +26,9 @@ namespace RepositoryLayer.Services
     /// <seealso cref="RepositoryLayer.Intefaces.IUserRL" />
     public class UserRL : IUserRL
     {
+        /// <summary>
+        /// The context
+        /// </summary>
         public SocialDirectoryContext context;
 
         /// <summary>
