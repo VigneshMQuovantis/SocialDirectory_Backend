@@ -1,5 +1,5 @@
-﻿// <copyright file="RegistrationResponseModel.cs" company="Quovantis Technologies">
-//     RegistrationresponseModel copyright tag.
+﻿// <copyright file="RegistrationModel.cs" company="Quovantis Technologies">
+//     RegistrationModel copyright tag.
 // </copyright>
 
 namespace CommonLayer.UserModels
@@ -11,10 +11,18 @@ namespace CommonLayer.UserModels
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Registration response model class
+    /// Registration model class
     /// </summary>
-    public class RegistrationResponseModel
+    public class RegistrationModel
     {
+        /// <summary>
+        /// Gets or sets the user identifier.
+        /// </summary>
+        /// <value>
+        /// The user identifier.
+        /// </value>
+        public long UserId { get; set; }
+
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -30,6 +38,14 @@ namespace CommonLayer.UserModels
         /// The email identifier.
         /// </value>
         public string EmailId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the password.
+        /// </summary>
+        /// <value>
+        /// The password.
+        /// </value>
+        public string Password { get; set; }
 
         /// <summary>
         /// Gets or sets the gender.

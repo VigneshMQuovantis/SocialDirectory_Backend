@@ -114,5 +114,8 @@ namespace RepositoryLayer.Entities
         [DataType(DataType.Text)]
         [Display(Name = "Location")]
         public string Location { get; set; }
+
+        public virtual ICollection<ContactEntities> MyDetail { get; set; }
+        public virtual ICollection<ContactEntities> FriendDetail { get; set; }
     }
 }

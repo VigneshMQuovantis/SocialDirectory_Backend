@@ -11,8 +11,8 @@ using RepositoryLayer.Context;
 namespace RepositoryLayer.Migrations
 {
     [DbContext(typeof(SocialDirectoryContext))]
-    [Migration("20220310114037_SocialDirectoryUserTable")]
-    partial class SocialDirectoryUserTable
+    [Migration("20220311140011_SocialDirectory")]
+    partial class SocialDirectory
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,6 +22,21 @@ namespace RepositoryLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("RepositoryLayer.Entities.ContactEntities", b =>
+                {
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("ContactId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("UserId", "ContactId");
+
+                    b.HasIndex("ContactId");
+
+                    b.ToTable("ContactTable");
+                });
 
             modelBuilder.Entity("RepositoryLayer.Entities.UserEntities", b =>
                 {
@@ -66,6 +81,32 @@ namespace RepositoryLayer.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("UserTable");
+                });
+
+            modelBuilder.Entity("RepositoryLayer.Entities.ContactEntities", b =>
+                {
+                    b.HasOne("RepositoryLayer.Entities.UserEntities", "UserFriend")
+                        .WithMany("FriendDetail")
+                        .HasForeignKey("ContactId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RepositoryLayer.Entities.UserEntities", "User")
+                        .WithMany("MyDetail")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+
+                    b.Navigation("UserFriend");
+                });
+
+            modelBuilder.Entity("RepositoryLayer.Entities.UserEntities", b =>
+                {
+                    b.Navigation("FriendDetail");
+
+                    b.Navigation("MyDetail");
                 });
 #pragma warning restore 612, 618
         }

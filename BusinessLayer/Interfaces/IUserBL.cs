@@ -22,7 +22,7 @@ namespace BusinessLayer.Interfaces
         /// </summary>
         /// <param name="model">The model.</param>
         /// <returns></returns>
-        RegistrationResponseModel Registration(UserEntities model);
+        RegistrationResponseModel Registration(RegistrationModel model);
 
         /// <summary>
         /// Logins the specified model.

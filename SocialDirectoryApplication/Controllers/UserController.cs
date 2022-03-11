@@ -37,7 +37,7 @@ namespace SocialDirectoryApplication.Controllers
         /// </summary>
         /// <param name="model">The model.</param>
         [HttpPost("register")]
-        public IActionResult Registration(UserEntities model)
+        public IActionResult Registration(RegistrationModel model)
         {
             try
             {

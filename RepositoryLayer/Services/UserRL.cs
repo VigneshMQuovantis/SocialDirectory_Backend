@@ -104,7 +104,7 @@ namespace RepositoryLayer.Services
         /// <param name="model"></param>
         /// <returns>Registration response</returns>
         /// <exception cref="CustomException"></exception>
-        public RegistrationResponseModel Registration(UserEntities model)
+        public RegistrationResponseModel Registration(RegistrationModel  model)
         {
             try
             {

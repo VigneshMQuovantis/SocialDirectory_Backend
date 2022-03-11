@@ -38,7 +38,7 @@ namespace BusinessLayer.Services
         /// </summary>
         /// <param name="model">The model.</param>
         /// <returns>Registration response from respository layer</returns>
-        public RegistrationResponseModel Registration(UserEntities model)
+        public RegistrationResponseModel Registration(RegistrationModel model)
         {
             try
             {
