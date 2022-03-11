@@ -53,5 +53,23 @@ namespace SocialDirectoryApplication.Controllers
                 return BadRequest(new { ex.Message });
             }
         }
+
+        [HttpGet("{searchParameters}")]
+        public IActionResult GetContactsBySearch(string searchParameters)
+        {
+            try
+            {
+                IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetContactsBySearch(searchParameters);
+                if (contacts == null)
+                {
+                    return NotFound(new { Success = false, message = "No contacts with search parameters" });
+                }
+                return Ok(new { Success = true, message = "Retrived contacts with search parameters ", contacts });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { ex.Message });
+            }
+        }
     }
 }

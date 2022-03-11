@@ -36,13 +36,30 @@ namespace BusinessLayer.Services
         /// <summary>
         /// Gets all contacts.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Get All Response from Repsitory layer</returns>
         /// <exception cref="NotImplementedException"></exception>
         public IEnumerable<GetAllContacts> GetAllContacts()
         {
             try
             {
                 return this.contactDetailsRL.GetAllContacts();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Gets the contacts by search.
+        /// </summary>
+        /// <param name="searchParameters">The search parameters.</param>
+        /// <returns></returns>
+        public IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters)
+        {
+            try
+            {
+                return this.contactDetailsRL.GetContactsBySearch(searchParameters);
             }
             catch (Exception ex)
             {

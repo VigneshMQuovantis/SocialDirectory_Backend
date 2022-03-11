@@ -22,5 +22,12 @@ namespace RepositoryLayer.Intefaces
         /// </summary>
         /// <returns></returns>
         IEnumerable<GetAllContacts> GetAllContacts();
+
+        /// <summary>
+        /// Gets the contacts by search.
+        /// </summary>
+        /// <param name="searchParameters">The search parameters.</param>
+        /// <returns></returns>
+        IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters);
     }
 }
