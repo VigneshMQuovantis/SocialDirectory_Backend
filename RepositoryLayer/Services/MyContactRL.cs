@@ -83,5 +83,51 @@ namespace RepositoryLayer.Services
                 throw new CustomException(HttpStatusCode.BadRequest, "Contact already added to your list");
             }
         }
+
+        /// <summary>
+        /// Gets the contact with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public ContactEntities GetContactWithContactId(long contactId, long jwtUserId)
+        {
+            try
+            {
+                var contact = this.context.UserTable.Where(e => e.UserId == jwtUserId);
+                if (contact != null)
+                {
+                    return this.context.ContactTable.FirstOrDefault(e => e.UserId == jwtUserId && e.ContactId == contactId);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.BadRequest, "Cannot get users due to some error");
+            }
+        }
+
+        /// <summary>
+        /// Deletes the contact with contact identifier.
+        /// </summary>
+        /// <param name="contact">The contact.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        public void DeleteContactWithContactId(ContactEntities contact, long jwtUserId)
+        {
+            try
+            {
+                var validUserId = this.context.UserTable.Where(e => e.UserId == jwtUserId);
+                if (validUserId != null)
+                {
+                    this.context.ContactTable.Remove(contact);
+                    this.context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.NotFound, "No lable found to delete");
+            }
+        }
     }
 }

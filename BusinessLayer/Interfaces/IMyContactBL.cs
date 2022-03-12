@@ -3,6 +3,7 @@
 // </copyright>
 
 using CommonLayer.MyContactsModel;
+using RepositoryLayer.Entities;
 
 namespace BusinessLayer.Interfaces
 {
@@ -18,5 +19,20 @@ namespace BusinessLayer.Interfaces
         /// <param name="jwtUserId">The JWT user identifier.</param>
         /// <returns></returns>
         GetMyContactsModel AddContact(long contactId, long jwtUserId);
+
+        /// <summary>
+        /// Gets the contact with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        ContactEntities GetContactWithContactId(long contactId, long jwtUserId);
+
+        /// <summary>
+        /// Deletes the contact with contact identifier.
+        /// </summary>
+        /// <param name="contact">The contact.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        void DeleteContactWithContactId(ContactEntities contact, long jwtUserId);
     }
 }

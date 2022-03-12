@@ -6,6 +6,7 @@ namespace BusinessLayer.Services
 {
     using BusinessLayer.Interfaces;
     using CommonLayer.MyContactsModel;
+    using RepositoryLayer.Entities;
     using RepositoryLayer.Intefaces;
     using System;
     using System.Collections.Generic;
@@ -43,6 +44,41 @@ namespace BusinessLayer.Services
             try
             {
                 return this.myContactRL.AddContact(contactId, jwtUserId);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Deletes the contact with contact identifier.
+        /// </summary>
+        /// <param name="contact">The contact.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        public void DeleteContactWithContactId(ContactEntities contact, long jwtUserId)
+        {
+            try
+            {
+                this.myContactRL.DeleteContactWithContactId(contact, jwtUserId);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Gets the contact with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        public ContactEntities GetContactWithContactId(long contactId, long jwtUserId)
+        {
+            try
+            {
+                return this.myContactRL.GetContactWithContactId(contactId, jwtUserId);
             }
             catch (Exception ex)
             {

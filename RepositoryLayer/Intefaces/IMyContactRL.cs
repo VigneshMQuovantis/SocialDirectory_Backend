@@ -5,6 +5,7 @@
 namespace RepositoryLayer.Intefaces
 {
     using CommonLayer.MyContactsModel;
+    using RepositoryLayer.Entities;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -23,5 +24,20 @@ namespace RepositoryLayer.Intefaces
         /// <param name="jwtUserId">The JWT user identifier.</param>
         /// <returns></returns>
         GetMyContactsModel AddContact(long contactId, long jwtUserId);
+
+        /// <summary>
+        /// Gets the contact with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        ContactEntities GetContactWithContactId(long contactId, long jwtUserId);
+
+        /// <summary>
+        /// Deletes the contact with contact identifier.
+        /// </summary>
+        /// <param name="contact">The contact.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        void DeleteContactWithContactId(ContactEntities contact, long jwtUserId);
     }
 }

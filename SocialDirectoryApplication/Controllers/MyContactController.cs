@@ -9,6 +9,7 @@ namespace SocialDirectoryApplication.Controllers
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
+    using RepositoryLayer.Entities;
 
     /// <summary>
     /// My Contact Controller Class
@@ -55,6 +56,24 @@ namespace SocialDirectoryApplication.Controllers
             {
                 return BadRequest(new {success = false,  message = ex.Message });
             }
+        }
+
+        /// <summary>
+        /// Deletes the lable.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <returns></returns>
+        [HttpDelete("{contactId}")]
+        public IActionResult DeleteLable(long contactId)
+        {
+            long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+            ContactEntities contact = myContactBL.GetContactWithContactId(contactId, jwtUserId);
+            if (contact == null)
+            {
+                return NotFound(new { Success = false, message = "No Contact found" });
+            }
+            myContactBL.DeleteContactWithContactId(contact, jwtUserId);
+            return Ok(new { Success = true, message = "Contact Removed" });
         }
     }
 }
