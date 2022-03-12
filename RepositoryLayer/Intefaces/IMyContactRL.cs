@@ -39,5 +39,12 @@ namespace RepositoryLayer.Intefaces
         /// <param name="contact">The contact.</param>
         /// <param name="jwtUserId">The JWT user identifier.</param>
         void DeleteContactWithContactId(ContactEntities contact, long jwtUserId);
+
+        /// <summary>
+        /// Gets the contacts of user.
+        /// </summary>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        IEnumerable<GetMyContactsModel> GetContactsOfUser(long jwtUserId);
     }
 }

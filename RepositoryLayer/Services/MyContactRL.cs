@@ -129,5 +129,52 @@ namespace RepositoryLayer.Services
                 throw new CustomException(HttpStatusCode.NotFound, "No lable found to delete");
             }
         }
+
+        public IEnumerable<GetMyContactsModel> GetContactsOfUser(long jwtUserId)
+        {
+            try
+            {
+                var validateUser = this.context.UserTable.Where(e => e.UserId == jwtUserId);
+                if(validateUser != null)
+                {
+                    var result = (from user in this.context.UserTable
+                                  join contact in this.context.ContactTable on user.UserId equals contact.ContactId where contact.UserId == jwtUserId
+                                  select new
+                                  {
+                                      contact.ContactId,
+                                      user.UserId,
+                                      user.EmailId,
+                                      user.Name,
+                                      user.Gender,
+                                      user.DateOfBirth,
+                                      user.MobileNumber,
+                                      user.Interest,
+                                      user.Location
+
+                                  }).ToList();
+                    IList<GetMyContactsModel> userList = new List<GetMyContactsModel>();
+                    foreach (var contact in result)
+                    {
+                        userList.Add(new GetMyContactsModel()
+                        {
+                            ContactPersonId = contact.UserId,
+                            Name = contact.Name,
+                            EmailId = contact.EmailId,
+                            Gender = contact.Gender,
+                            DateOfBirth = contact.DateOfBirth,
+                            MobileNumber = contact.MobileNumber,
+                            Interest = contact.Interest,
+                            Location = contact.Location
+                        });
+                    }
+                    return userList;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.BadRequest, "Cannot get users due to some error");
+            }
+        }
     }
 }

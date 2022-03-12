@@ -59,12 +59,12 @@ namespace SocialDirectoryApplication.Controllers
         }
 
         /// <summary>
-        /// Deletes the lable.
+        /// Deletes the contact with contact identifier.
         /// </summary>
         /// <param name="contactId">The contact identifier.</param>
         /// <returns></returns>
         [HttpDelete("{contactId}")]
-        public IActionResult DeleteLable(long contactId)
+        public IActionResult DeleteContactWithContactId(long contactId)
         {
             long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
             ContactEntities contact = myContactBL.GetContactWithContactId(contactId, jwtUserId);
@@ -74,6 +74,22 @@ namespace SocialDirectoryApplication.Controllers
             }
             myContactBL.DeleteContactWithContactId(contact, jwtUserId);
             return Ok(new { Success = true, message = "Contact Removed" });
+        }
+
+        /// <summary>
+        /// Gets the contacts of users.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("contactsOfUser")]
+        public IActionResult GetContactsOfUsers()
+        {
+            long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+            IEnumerable<GetMyContactsModel> contact = myContactBL.GetContactsOfUser(jwtUserId);
+            if (contact == null)
+            {
+                return NotFound(new { Success = false, message = "No contacts in database " });
+            }
+            return Ok(new { Success = true, message = "Retrived all contacts of user ", contact });
         }
     }
 }

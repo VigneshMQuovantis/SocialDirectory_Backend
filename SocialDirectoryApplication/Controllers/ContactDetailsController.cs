@@ -36,7 +36,7 @@ namespace SocialDirectoryApplication.Controllers
         /// Gets all contacts.
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("allContacts")]
         public IActionResult GetAllContacts()
         {
             try

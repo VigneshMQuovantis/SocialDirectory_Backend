@@ -69,6 +69,23 @@ namespace BusinessLayer.Services
         }
 
         /// <summary>
+        /// Gets the contacts of user.
+        /// </summary>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        public IEnumerable<GetMyContactsModel> GetContactsOfUser(long jwtUserId)
+        {
+            try
+            {
+                return this.myContactRL.GetContactsOfUser(jwtUserId);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
         /// Gets the contact with contact identifier.
         /// </summary>
         /// <param name="contactId">The contact identifier.</param>
