@@ -24,6 +24,8 @@ builder.Services.AddTransient<IUserBL, UserBL>();
 builder.Services.AddTransient<IUserRL, UserRL>();
 builder.Services.AddTransient<IContactDetailsBL, ContactDetailsBL>();
 builder.Services.AddTransient<IContactDetailsRL, ContactDetailsRL>();
+builder.Services.AddTransient<IMyContactBL, MyContactBL>();
+builder.Services.AddTransient<IMyContactRL, MyContactRL>();
 builder.Services.AddAuthentication();
 builder.Services.AddSwaggerGen(c =>
 {

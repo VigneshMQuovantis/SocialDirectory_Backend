@@ -54,6 +54,11 @@ namespace SocialDirectoryApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Gets the contacts by search.
+        /// </summary>
+        /// <param name="searchParameters">The search parameters.</param>
+        /// <returns></returns>
         [HttpGet("{searchParameters}")]
         public IActionResult GetContactsBySearch(string searchParameters)
         {

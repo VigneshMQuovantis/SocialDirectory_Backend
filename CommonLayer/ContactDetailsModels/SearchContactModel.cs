@@ -1,4 +1,4 @@
-﻿// <copyright file="USearchContactModel.cs" company="Quovantis Technologies">
+﻿// <copyright file="SearchContactModel.cs" company="Quovantis Technologies">
 //     SearchContactModel copyright tag.
 // </copyright>
 
