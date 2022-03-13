@@ -49,30 +49,33 @@ namespace RepositoryLayer.Services
                 var addContact = this.context.UserTable.Where(e => e.UserId == jwtUserId && e.UserId == contactId);
                 if (addContact != null)
                 {
-                    ContactEntities entities = new()
+                    if(jwtUserId != contactId)
                     {
-                        UserId = jwtUserId,
-                        ContactId = contactId
-                    };
-                    this.context.Add(entities);
-                    int result = this.context.SaveChanges();
-                    if (result > 0)
-                    {
-                        var myContact = this.context.UserTable.FirstOrDefault(e => e.UserId == contactId);
-                        if (myContact != null)
+                        ContactEntities entities = new()
                         {
-                            GetMyContactsModel myContactModel = new()
+                            UserId = jwtUserId,
+                            ContactId = contactId
+                        };
+                        this.context.Add(entities);
+                        int result = this.context.SaveChanges();
+                        if (result > 0)
+                        {
+                            var myContact = this.context.UserTable.FirstOrDefault(e => e.UserId == contactId);
+                            if (myContact != null)
                             {
-                                ContactPersonId = myContact.UserId,
-                                Name = myContact.Name,
-                                EmailId = myContact.EmailId,
-                                Gender = myContact.Gender,
-                                DateOfBirth = myContact.DateOfBirth,
-                                MobileNumber = myContact.MobileNumber,
-                                Interest = myContact.Interest,
-                                Location = myContact.Location
-                            };
-                            return myContactModel;
+                                GetMyContactsModel myContactModel = new()
+                                {
+                                    ContactPersonId = myContact.UserId,
+                                    Name = myContact.Name,
+                                    EmailId = myContact.EmailId,
+                                    Gender = myContact.Gender,
+                                    DateOfBirth = myContact.DateOfBirth,
+                                    MobileNumber = myContact.MobileNumber,
+                                    Interest = myContact.Interest,
+                                    Location = myContact.Location
+                                };
+                                return myContactModel;
+                            }
                         }
                     }
                 }
@@ -130,6 +133,12 @@ namespace RepositoryLayer.Services
             }
         }
 
+        /// <summary>
+        /// Gets the contacts of user.
+        /// </summary>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="RepositoryLayer.ExceptionHandling.CustomException">Cannot get users due to some error</exception>
         public IEnumerable<GetMyContactsModel> GetContactsOfUser(long jwtUserId)
         {
             try
