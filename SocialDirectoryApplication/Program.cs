@@ -27,6 +27,14 @@ builder.Services.AddTransient<IContactDetailsRL, ContactDetailsRL>();
 builder.Services.AddTransient<IMyContactBL, MyContactBL>();
 builder.Services.AddTransient<IMyContactRL, MyContactRL>();
 builder.Services.AddAuthentication();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+    name: "AllowOrigin",
+  builder => {
+      builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+  });
+});
 builder.Services.AddSwaggerGen(c =>
 {
     var jwtSecurityScheme = new OpenApiSecurityScheme
@@ -81,6 +89,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors("AllowOrigin");
 
 app.UseHttpsRedirection();
 
