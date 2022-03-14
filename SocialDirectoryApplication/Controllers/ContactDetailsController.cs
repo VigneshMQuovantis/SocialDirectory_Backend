@@ -6,6 +6,7 @@ namespace SocialDirectoryApplication.Controllers
 {
     using BusinessLayer.Interfaces;
     using CommonLayer.ContactDetailsModels;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using RepositoryLayer.Entities;
@@ -36,12 +37,14 @@ namespace SocialDirectoryApplication.Controllers
         /// Gets all contacts.
         /// </summary>
         /// <returns></returns>
+        [Authorize]
         [HttpGet("allContacts")]
         public IActionResult GetAllContacts()
         {
             try
             {
-                IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetAllContacts();
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetAllContacts(jwtUserId);
                 if (contacts == null)
                 {
                     return BadRequest(new { Success = false, message = "There are no user in database " });
@@ -59,12 +62,14 @@ namespace SocialDirectoryApplication.Controllers
         /// </summary>
         /// <param name="searchParameters">The search parameters.</param>
         /// <returns></returns>
+        [Authorize]
         [HttpGet("{searchParameters}")]
         public IActionResult GetContactsBySearch(string searchParameters)
         {
             try
             {
-                IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetContactsBySearch(searchParameters);
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetContactsBySearch(searchParameters, jwtUserId);
                 if (contacts == null)
                 {
                     return NotFound(new { Success = false, message = "No contacts with search parameters" });

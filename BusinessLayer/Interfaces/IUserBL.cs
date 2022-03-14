@@ -30,5 +30,12 @@ namespace BusinessLayer.Interfaces
         /// <param name="model">The model.</param>
         /// <returns></returns>
         LoginResponseModel Login(LoginModel model);
+
+        /// <summary>
+        /// Mies the profile.
+        /// </summary>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        IEnumerable<MyProfileModel> MyProfile(long jwtUserId);
     }
 }

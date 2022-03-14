@@ -66,14 +66,21 @@ namespace SocialDirectoryApplication.Controllers
         [HttpDelete("{contactId}")]
         public IActionResult DeleteContactWithContactId(long contactId)
         {
-            long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
-            ContactEntities contact = myContactBL.GetContactWithContactId(contactId, jwtUserId);
-            if (contact == null)
+            try
             {
-                return NotFound(new { Success = false, message = "No Contact found" });
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                ContactEntities contact = myContactBL.GetContactWithContactId(contactId, jwtUserId);
+                if (contact == null)
+                {
+                    return NotFound(new { Success = false, message = "No Contact found" });
+                }
+                myContactBL.DeleteContactWithContactId(contact, jwtUserId);
+                return Ok(new { Success = true, message = "Contact Removed" });
             }
-            myContactBL.DeleteContactWithContactId(contact, jwtUserId);
-            return Ok(new { Success = true, message = "Contact Removed" });
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
         }
 
         /// <summary>
@@ -83,13 +90,20 @@ namespace SocialDirectoryApplication.Controllers
         [HttpGet("contactsOfUser")]
         public IActionResult GetContactsOfUsers()
         {
-            long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
-            IEnumerable<GetMyContactsModel> contact = myContactBL.GetContactsOfUser(jwtUserId);
-            if (contact == null)
+            try
             {
-                return NotFound(new { Success = false, message = "No contacts in database " });
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                IEnumerable<GetMyContactsModel> contact = myContactBL.GetContactsOfUser(jwtUserId);
+                if (contact == null)
+                {
+                    return NotFound(new { Success = false, message = "No contacts in database " });
+                }
+                return Ok(new { Success = true, message = "Retrived all contacts of user ", contact });
             }
-            return Ok(new { Success = true, message = "Retrived all contacts of user ", contact });
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
         }
     }
 }

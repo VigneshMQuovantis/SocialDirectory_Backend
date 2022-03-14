@@ -179,5 +179,42 @@ namespace RepositoryLayer.Services
                 throw new CustomException(HttpStatusCode.Unauthorized, "User Credentiatials wrong");
             }
         }
+
+        /// <summary>
+        /// Mies the profile.
+        /// </summary>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public IEnumerable<MyProfileModel> MyProfile(long jwtUserId)
+        {
+            try
+            {
+                var profile = this.context.UserTable.Where(e => e.UserId == jwtUserId);
+                if (profile != null)
+                {
+                    IList<MyProfileModel> userList = new List<MyProfileModel>();
+                    foreach (var contact in profile)
+                    {
+                        userList.Add(new MyProfileModel()
+                        {
+                            Name = contact.Name,
+                            EmailId = contact.EmailId,
+                            Gender = contact.Gender,
+                            DateOfBirth = contact.DateOfBirth,
+                            MobileNumber = contact.MobileNumber,
+                            Interest = contact.Interest,
+                            Location = contact.Location
+                        });
+                    }
+                    return userList;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.BadRequest, "Cannot get users due to some error");
+            }
+        }
     }
 }

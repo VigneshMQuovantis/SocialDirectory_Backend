@@ -38,11 +38,11 @@ namespace BusinessLayer.Services
         /// </summary>
         /// <returns>Get All Response from Repsitory layer</returns>
         /// <exception cref="NotImplementedException"></exception>
-        public IEnumerable<GetAllContacts> GetAllContacts()
+        public IEnumerable<GetAllContacts> GetAllContacts(long jwtUserId)
         {
             try
             {
-                return this.contactDetailsRL.GetAllContacts();
+                return this.contactDetailsRL.GetAllContacts(jwtUserId);
             }
             catch (Exception ex)
             {
@@ -55,11 +55,11 @@ namespace BusinessLayer.Services
         /// </summary>
         /// <param name="searchParameters">The search parameters.</param>
         /// <returns></returns>
-        public IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters)
+        public IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters, long jwtUserId)
         {
             try
             {
-                return this.contactDetailsRL.GetContactsBySearch(searchParameters);
+                return this.contactDetailsRL.GetContactsBySearch(searchParameters, jwtUserId);
             }
             catch (Exception ex)
             {

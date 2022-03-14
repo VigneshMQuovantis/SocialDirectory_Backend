@@ -40,11 +40,11 @@ namespace RepositoryLayer.Services
         /// </summary>
         /// <returns>Get all response </returns>
         /// <exception cref="RepositoryLayer.ExceptionHandling.CustomException">Cannot get users due to some error</exception>
-        public IEnumerable<GetAllContacts> GetAllContacts()
+        public IEnumerable<GetAllContacts> GetAllContacts(long jwtUserId)
         {
             try
             {
-                var allUsers = this.context.UserTable.ToList();
+                var allUsers = this.context.UserTable.Where(e=> e.UserId != jwtUserId);
                 IList<GetAllContacts> userList = new List<GetAllContacts>();    
                 foreach (var contact in allUsers)
                 {
@@ -73,12 +73,12 @@ namespace RepositoryLayer.Services
         /// </summary>
         /// <param name="searchParameters">The search parameters.</param>
         /// <returns></returns>
-        public IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters)
+        public IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters, long jwtUserId)
         {
             try
             {
                 var allUsers = this.context.UserTable.Where(e=> e.EmailId == searchParameters || e.Name == searchParameters || e.Gender == searchParameters ||
-                               e.DateOfBirth == searchParameters || e.MobileNumber == searchParameters || e.Interest == searchParameters || e.Location == searchParameters).ToList();
+                               e.DateOfBirth == searchParameters || e.MobileNumber == searchParameters || e.Interest == searchParameters || e.Location == searchParameters && e.UserId != jwtUserId).ToList();
                 if(allUsers.Count > 0)
                 {
                     IList<GetAllContacts> userList = new List<GetAllContacts>();

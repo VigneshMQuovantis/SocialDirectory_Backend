@@ -67,5 +67,23 @@ namespace BusinessLayer.Services
                 throw;
             }
         }
+
+        /// <summary>
+        /// Mies the profile.
+        /// </summary>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public IEnumerable<MyProfileModel> MyProfile(long jwtUserId)
+        {
+            try
+            {
+                return this.userRL.MyProfile(jwtUserId);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }

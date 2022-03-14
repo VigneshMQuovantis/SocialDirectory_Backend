@@ -21,13 +21,13 @@ namespace BusinessLayer.Interfaces
         /// Gets all contacts.
         /// </summary>
         /// <returns></returns>
-        IEnumerable<GetAllContacts> GetAllContacts();
+        IEnumerable<GetAllContacts> GetAllContacts(long jwtUserId);
 
         /// <summary>
         /// Gets the contacts by search.
         /// </summary>
         /// <param name="searchParameters">The search parameters.</param>
         /// <returns></returns>
-        IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters);
+        IEnumerable<GetAllContacts> GetContactsBySearch(string searchParameters, long jwtUserId);
     }
 }

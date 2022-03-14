@@ -6,6 +6,7 @@ namespace SocialDirectoryApplication.Controllers
 {
     using BusinessLayer.Interfaces;
     using CommonLayer.UserModels;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using RepositoryLayer.Entities;
@@ -70,6 +71,30 @@ namespace SocialDirectoryApplication.Controllers
                     return NotFound(new { Success = false, message = "Email or Password Not Found" });
                 }
                 return Ok(new { Success = true, message = "Login Successful", credentials });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Mies the profile.
+        /// </summary>
+        /// <returns></returns>
+        [Authorize]
+        [HttpGet("myProfile")]
+        public IActionResult MyProfile()
+        {
+            try
+            {
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                IEnumerable<MyProfileModel> profile = userBL.MyProfile(jwtUserId);
+                if (profile == null)
+                {
+                    return NotFound(new { Success = false, message = "Connot Connect My Profile " });
+                }
+                return Ok(new { Success = true, message = "Retrived My Profile", profile });
             }
             catch (Exception ex)
             {
