@@ -56,13 +56,7 @@ namespace RepositoryLayer.Services
                             UserId = jwtUserId,
                             ContactId = contactId,
                         };
-                        ContactEntities friendContact = new()
-                        {
-                            UserId = contactId,
-                            ContactId = jwtUserId
-                        };
                         this.context.Add(entities);
-                        this.context.Add(friendContact);
                         int result = this.context.SaveChanges();
                         if (result > 0)
                         {
