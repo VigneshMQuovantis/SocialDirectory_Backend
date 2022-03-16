@@ -65,6 +65,7 @@ namespace RepositoryLayer.Services
                             {
                                 GetMyContactsModel myContactModel = new()
                                 {
+                                    UserId = jwtUserId,
                                     ContactPersonId = myContact.UserId,
                                     Name = myContact.Name,
                                     EmailId = myContact.EmailId,
@@ -166,6 +167,63 @@ namespace RepositoryLayer.Services
                     {
                         userList.Add(new GetMyContactsModel()
                         {
+                            UserId = jwtUserId,
+                            ContactPersonId = contact.UserId,
+                            Name = contact.Name,
+                            EmailId = contact.EmailId,
+                            Gender = contact.Gender,
+                            DateOfBirth = contact.DateOfBirth,
+                            MobileNumber = contact.MobileNumber,
+                            Interest = contact.Interest,
+                            Location = contact.Location
+                        });
+                    }
+                    return userList;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.BadRequest, "Cannot get users due to some error");
+            }
+        }
+
+        /// <summary>
+        /// Gets the with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="RepositoryLayer.ExceptionHandling.CustomException">Cannot get users due to some error</exception>
+        public IEnumerable<GetMyContactsModel> GetWithContactId(long contactId, long jwtUserId)
+        {
+            try
+            {
+                var validateUser = this.context.UserTable.Where(e => e.UserId == jwtUserId);
+                if (validateUser != null)
+                {
+                    var result = (from user in this.context.UserTable
+                                  join contact in this.context.ContactTable on user.UserId equals contact.ContactId
+                                  where contact.UserId == jwtUserId && contact.ContactId == contactId
+                                  select new
+                                  {
+                                      contact.ContactId,
+                                      user.UserId,
+                                      user.EmailId,
+                                      user.Name,
+                                      user.Gender,
+                                      user.DateOfBirth,
+                                      user.MobileNumber,
+                                      user.Interest,
+                                      user.Location
+
+                                  }).ToList();
+                    IList<GetMyContactsModel> userList = new List<GetMyContactsModel>();
+                    foreach (var contact in result)
+                    {
+                        userList.Add(new GetMyContactsModel()
+                        {
+                            UserId = jwtUserId,
                             ContactPersonId = contact.UserId,
                             Name = contact.Name,
                             EmailId = contact.EmailId,

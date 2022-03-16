@@ -21,6 +21,14 @@ namespace CommonLayer.MyContactsModel
         /// <value>
         /// The user identifier.
         /// </value>
+        public long UserId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the user identifier.
+        /// </summary>
+        /// <value>
+        /// The user identifier.
+        /// </value>
         public long ContactPersonId { get; set; }
 
         /// <summary>

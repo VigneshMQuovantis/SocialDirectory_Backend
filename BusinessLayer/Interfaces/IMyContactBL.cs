@@ -41,5 +41,13 @@ namespace BusinessLayer.Interfaces
         /// <param name="jwtUserId">The JWT user identifier.</param>
         /// <returns></returns>
         IEnumerable<GetMyContactsModel> GetContactsOfUser(long jwtUserId);
+
+        /// <summary>
+        /// Gets the with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        IEnumerable<GetMyContactsModel> GetWithContactId(long contactId, long jwtUserId);
     }
 }

@@ -105,5 +105,29 @@ namespace SocialDirectoryApplication.Controllers
                 return BadRequest(new { success = false, message = ex.Message });
             }
         }
+
+        /// <summary>
+        /// Gets the with contact identifier.
+        /// </summary>
+        /// <param name="contactId">The contact identifier.</param>
+        /// <returns></returns>
+        [HttpGet("{contactId}")]
+        public IActionResult GetWithContactId(long contactId)
+        {
+            try
+            {
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                IEnumerable<GetMyContactsModel> contact = myContactBL.GetWithContactId(contactId, jwtUserId);
+                if (contact == null)
+                {
+                    return NotFound(new { Success = false, message = "No Contact found" });
+                }
+                return Ok(new { Success = true, message = "Contact Retrived", contact });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+        }
     }
 }
