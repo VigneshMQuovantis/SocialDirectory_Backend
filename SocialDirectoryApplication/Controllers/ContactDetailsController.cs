@@ -43,7 +43,8 @@ namespace SocialDirectoryApplication.Controllers
         {
             try
             {
-                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                long jwtUserId = 2;
                 IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetAllContacts(jwtUserId);
                 if (contacts == null)
                 {
@@ -68,7 +69,8 @@ namespace SocialDirectoryApplication.Controllers
         {
             try
             {
-                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                long jwtUserId = 2;
                 IEnumerable<GetAllContacts> contacts = contactDetailsBL.GetContactsBySearch(searchParameters, jwtUserId);
                 if (contacts == null)
                 {
