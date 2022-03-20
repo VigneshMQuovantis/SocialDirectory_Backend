@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialDirectoryApplication", "SocialDirectoryApplication\SocialDirectoryApplication.csproj", "{09666853-C395-4B7B-AD17-72277DA3FE89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialDirectoryApplication", "SocialDirectoryApplication\SocialDirectoryApplication.csproj", "{09666853-C395-4B7B-AD17-72277DA3FE89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B3F3CDAB-30AC-4F2C-A2CF-96EB214EC0B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B3F3CDAB-30AC-4F2C-A2CF-96EB214EC0B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryLayer", "RepositoryLayer\RepositoryLayer.csproj", "{D1BC0E20-AFC6-4A1C-AF3E-4FD95408E339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryLayer", "RepositoryLayer\RepositoryLayer.csproj", "{D1BC0E20-AFC6-4A1C-AF3E-4FD95408E339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{AB97B17F-3762-449F-8B9C-1CEEBC4499EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{AB97B17F-3762-449F-8B9C-1CEEBC4499EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialDirectoryMyContactTesting", "SocialDirectoryMyContactTesting\SocialDirectoryMyContactTesting.csproj", "{E7C3C5F6-E01C-459B-9923-A396670D4962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AB97B17F-3762-449F-8B9C-1CEEBC4499EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB97B17F-3762-449F-8B9C-1CEEBC4499EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB97B17F-3762-449F-8B9C-1CEEBC4499EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C3C5F6-E01C-459B-9923-A396670D4962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C3C5F6-E01C-459B-9923-A396670D4962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C3C5F6-E01C-459B-9923-A396670D4962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C3C5F6-E01C-459B-9923-A396670D4962}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
