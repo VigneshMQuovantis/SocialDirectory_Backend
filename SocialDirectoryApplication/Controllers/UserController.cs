@@ -24,13 +24,16 @@ namespace SocialDirectoryApplication.Controllers
         /// </summary>
         private readonly IUserBL userBL;
 
+        public readonly ILogger<UserController> logger;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="UserController"/> class.
         /// </summary>
         /// <param name="userBL">The user bl.</param>
-        public UserController(IUserBL userBL)
+        public UserController(IUserBL userBL, ILogger<UserController> logger)
         {
             this.userBL = userBL;
+            this.logger = logger;
         }
 
         /// <summary>
@@ -51,7 +54,7 @@ namespace SocialDirectoryApplication.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { ex.Message }); 
+                return BadRequest(new { ex.Message });
             }
         }
 
@@ -75,6 +78,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
 
