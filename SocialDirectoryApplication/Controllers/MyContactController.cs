@@ -47,7 +47,8 @@ namespace SocialDirectoryApplication.Controllers
         {
             try
             {
-                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                long jwtUserId = 2;
                 GetMyContactsModel myContacts = myContactBL.AddContact(contactId, jwtUserId);
                 if (myContacts != null)
                 {
@@ -72,7 +73,8 @@ namespace SocialDirectoryApplication.Controllers
         {
             try
             {
-                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                long jwtUserId = 2;
                 ContactEntities contact = myContactBL.GetContactWithContactId(contactId, jwtUserId);
                 if (contact == null)
                 {
@@ -97,7 +99,8 @@ namespace SocialDirectoryApplication.Controllers
         {
             try
             {
-                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                long jwtUserId = 2;
                 IEnumerable<GetMyContactsModel> contact = myContactBL.GetContactsOfUser(jwtUserId);
                 if (contact == null)
                 {
@@ -122,7 +125,8 @@ namespace SocialDirectoryApplication.Controllers
         {
             try
             {
-                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                long jwtUserId = 2;
                 IEnumerable<GetMyContactsModel> contact = myContactBL.GetWithContactId(contactId, jwtUserId);
                 if (contact == null)
                 {
