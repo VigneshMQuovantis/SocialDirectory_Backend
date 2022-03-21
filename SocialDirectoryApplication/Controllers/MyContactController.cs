@@ -25,13 +25,16 @@ namespace SocialDirectoryApplication.Controllers
         /// </summary>
         private readonly IMyContactBL myContactBL;
 
+        public readonly ILogger<UserController> logger;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="MyContactController"/> class.
         /// </summary>
         /// <param name="myContactBL">My contact bl.</param>
-        public MyContactController(IMyContactBL myContactBL)
+        public MyContactController(IMyContactBL myContactBL, ILogger<UserController> logger)
         {
             this.myContactBL = myContactBL;
+            this.logger = logger;
         }
 
         /// <summary>
@@ -55,6 +58,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new {success = false,  message = ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
 
@@ -80,6 +84,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { success = false, message = ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
 
@@ -103,6 +108,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { success = false, message = ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
 
@@ -127,6 +133,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { success = false, message = ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
     }

@@ -55,6 +55,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
 
@@ -103,6 +104,7 @@ namespace SocialDirectoryApplication.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
     }

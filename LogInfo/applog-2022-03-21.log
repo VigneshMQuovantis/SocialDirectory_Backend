@@ -1,0 +1,28 @@
+2022-03-21 14:21:09.8319 - Application started. Press Ctrl+C to shut down. -          
+
+2022-03-21 14:21:09.9084 - Hosting environment: Development -          
+
+2022-03-21 14:21:09.9198 - Content root path: D:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\ -          
+
+2022-03-21 14:22:01.3073 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-21 14:22:02.7594 - Executed DbCommand (39ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-21 14:22:47.2094 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-21 14:22:47.2455 - Executed DbCommand (12ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-21 14:23:29.9429 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-21 14:23:30.0340 - Executed DbCommand (9ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
