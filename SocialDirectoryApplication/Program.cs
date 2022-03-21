@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using NLog.Extensions.Logging;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entities;
 using RepositoryLayer.ExceptionHandling;
@@ -14,7 +13,9 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -26,11 +27,6 @@ builder.Services.AddTransient<IContactDetailsRL, ContactDetailsRL>();
 builder.Services.AddTransient<IMyContactBL, MyContactBL>();
 builder.Services.AddTransient<IMyContactRL, MyContactRL>();
 builder.Services.AddAuthentication();
-
-builder.Host.ConfigureLogging((hostingContext, logging) => {
-    logging.AddNLog(hostingContext.Configuration.GetSection("Logging"));
-});
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(
