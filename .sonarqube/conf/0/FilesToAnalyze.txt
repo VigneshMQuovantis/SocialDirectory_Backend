@@ -1,0 +1,9 @@
+﻿D:\BackendApplication\SocialDirectoryApplication\CommonLayer\ContactDetailsModels\GetAllContacts.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\ContactDetailsModels\SearchContactModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\MyContactsModel\GetContactWithContactIdModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\MyContactsModel\GetMyContactsModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\LoginModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\LoginResponseModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\MyProfileModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\RegistrationModel.cs
+D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\RegistrationResponseModel.cs

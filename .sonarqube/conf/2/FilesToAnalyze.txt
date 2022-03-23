@@ -1,0 +1,7 @@
+﻿D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\Interfaces\IContactDetailsBL.cs
+D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\Interfaces\IMyContactBL.cs
+D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\Interfaces\IUserBL.cs
+D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\Services\ContactDetailsBL.cs
+D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\Services\MyContactBL.cs
+D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\Services\UserBL.cs
+D:\BackendApplication\SocialDirectoryApplication\BusinessLayer\TestingServices\TestingMyContactsBL.cs

@@ -1,0 +1,13 @@
+l
+cD:\BackendApplication\SocialDirectoryApplication\CommonLayer\ContactDetailsModels\GetAllContacts.csutf-8p
+gD:\BackendApplication\SocialDirectoryApplication\CommonLayer\ContactDetailsModels\SearchContactModel.csutf-8u
+lD:\BackendApplication\SocialDirectoryApplication\CommonLayer\MyContactsModel\GetContactWithContactIdModel.csutf-8k
+bD:\BackendApplication\SocialDirectoryApplication\CommonLayer\MyContactsModel\GetMyContactsModel.csutf-8^
+UD:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\LoginModel.csutf-8f
+]D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\LoginResponseModel.csutf-8b
+YD:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\MyProfileModel.csutf-8e
+\D:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\RegistrationModel.csutf-8m
+dD:\BackendApplication\SocialDirectoryApplication\CommonLayer\UserModels\RegistrationResponseModel.csutf-8v
+kD:\BackendApplication\SocialDirectoryApplication\CommonLayer\obj\Debug\net6.0\CommonLayer.GlobalUsings.g.csutf-8‡
+|D:\BackendApplication\SocialDirectoryApplication\CommonLayer\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8t
+iD:\BackendApplication\SocialDirectoryApplication\CommonLayer\obj\Debug\net6.0\CommonLayer.AssemblyInfo.csutf-8

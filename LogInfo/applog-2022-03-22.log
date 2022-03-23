@@ -1,0 +1,1286 @@
+2022-03-22 14:09:42.4857 - Application started. Press Ctrl+C to shut down. -          
+
+2022-03-22 14:09:42.5105 - Hosting environment: Development -          
+
+2022-03-22 14:09:42.5173 - Content root path: D:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\ -          
+
+2022-03-22 14:20:18.1374 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:20:21.0998 - Executed DbCommand (61ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 14:20:21.8040 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:20:21.8188 - Executed DbCommand (4ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:23:21.4544 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:23:21.4654 - Executed DbCommand (1ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 14:23:21.4967 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:23:21.5017 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:24:52.9554 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:24:52.9554 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:24:58.4176 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:24:58.4280 - Executed DbCommand (5ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:25:01.0646 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:25:01.0646 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:25:35.1865 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:25:35.1959 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:27:03.8854 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:27:03.8995 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:27:09.1956 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:27:09.1956 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:27:11.7469 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:27:11.7469 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:30:59.2222 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:30:59.2371 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:31:12.8561 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:31:12.8561 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:31:30.9114 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:31:30.9114 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:31:36.2335 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:31:36.2390 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:31:38.7510 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:31:38.7548 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:38:31.7593 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:38:31.8490 - Executed DbCommand (7ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:42:22.6654 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:42:22.6654 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:44:13.3444 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:44:13.3633 - Executed DbCommand (3ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 14:44:13.4059 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:44:13.4107 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:44:25.1115 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:44:25.1115 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:44:30.5597 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:44:30.5653 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:44:33.0964 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:44:33.0964 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:46:32.3538 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:46:32.3618 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:47:05.2358 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:47:05.2423 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:47:26.9918 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:47:26.9918 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:47:33.9539 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:47:33.9640 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:47:47.0511 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:47:47.1054 - Executed DbCommand (5ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:48:04.2299 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:48:04.2380 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:48:09.3300 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:48:09.3300 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:48:11.7586 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:48:11.7586 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:50:04.4181 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:50:04.4286 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:50:11.8312 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:50:11.8312 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:50:30.9985 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:50:31.0028 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:50:36.3177 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:50:36.3177 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:50:38.9234 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:50:38.9234 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:51:25.2629 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:51:25.2687 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:52:19.6789 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:52:19.6789 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:52:25.1881 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:52:25.1981 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:52:27.7975 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:52:27.8111 - Executed DbCommand (5ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:54:07.2547 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:54:07.2547 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:54:44.6600 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:54:44.6600 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:55:58.3986 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:55:58.4267 - Executed DbCommand (6ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 14:56:37.6411 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:56:37.6477 - Executed DbCommand (0ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 14:56:37.6921 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:56:37.6921 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:57:11.0080 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:57:11.0080 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:57:41.8222 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:57:41.8222 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:58:04.2393 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:58:04.2393 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:58:09.4421 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:58:09.4421 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 14:58:11.9113 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 14:58:11.9236 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:02:37.8216 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:02:37.8333 - Executed DbCommand (0ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 15:02:37.8807 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:02:37.8807 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:02:43.1471 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:02:43.1471 - Executed DbCommand (3ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:02:45.6048 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:02:45.6127 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:02:58.6535 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:02:58.6603 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:03:04.3665 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:04.3665 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:03:06.9725 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:06.9725 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:03:14.2117 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:14.2117 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:03:21.8148 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:21.8148 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:03:27.2020 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:27.2107 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:03:29.7280 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:29.7280 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:03:49.8229 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:03:49.8440 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:04:14.1976 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:04:14.1976 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:05:09.4042 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:05:09.4128 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:05:28.2681 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:05:28.2681 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:06:17.0055 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:06:17.0055 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:06:24.9662 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:06:24.9726 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:06:30.2346 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:06:30.2392 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:06:32.9825 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:06:32.9871 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:06:40.0911 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:06:40.1051 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 15:07:17.8522 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:07:17.8522 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 15:07:26.1863 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:07:26.1897 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 15:08:19.3080 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:08:19.3186 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 15:08:55.5713 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:08:55.5713 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 15:09:04.7301 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:09:04.7402 - Executed DbCommand (2ms) [Parameters=[@__searchParameters_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE (((((([u].[EmailId] = @__searchParameters_0) OR ([u].[Name] = @__searchParameters_0)) OR ([u].[Gender] = @__searchParameters_0)) OR ([u].[DateOfBirth] = @__searchParameters_0)) OR ([u].[MobileNumber] = @__searchParameters_0)) OR ([u].[Interest] = @__searchParameters_0)) OR ([u].[Location] = @__searchParameters_0) -          
+
+2022-03-22 15:09:56.1044 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:09:56.1409 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 15:09:56.5948 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:09:56.6015 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:10:04.4138 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:10:04.4138 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE (((((([u].[EmailId] = @__searchParameters_0) OR ([u].[Name] = @__searchParameters_0)) OR ([u].[Gender] = @__searchParameters_0)) OR ([u].[DateOfBirth] = @__searchParameters_0)) OR ([u].[MobileNumber] = @__searchParameters_0)) OR ([u].[Interest] = @__searchParameters_0)) OR ([u].[Location] = @__searchParameters_0) -          
+
+2022-03-22 15:10:06.9733 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:10:06.9733 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:11:14.6947 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:11:14.7115 - Executed DbCommand (5ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:12:09.7313 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:12:09.7313 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:12:13.8323 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:12:13.8323 - Executed DbCommand (3ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:12:16.3025 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:12:16.3161 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 15:12:21.4836 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:12:21.4916 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:12:22.8332 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:12:22.8332 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:12:58.4625 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:12:58.4625 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:13:08.8625 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:13:08.8625 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:13:14.0527 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:13:14.0527 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:13:16.2071 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:13:16.2071 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:16:17.4526 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:16:17.4685 - Executed DbCommand (4ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:16:22.4411 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:16:22.4411 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:16:24.7260 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:16:24.7260 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:25:18.3757 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:25:18.4786 - Executed DbCommand (5ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 15:25:18.5030 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:25:18.5030 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:25:29.1354 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:25:29.1354 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:25:34.3827 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:25:34.3827 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 15:25:36.7251 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 15:25:36.7251 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:24:08.0474 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:08.7925 - Executed DbCommand (4ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 17:24:08.8514 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:08.8514 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:24:11.7738 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:11.7851 - Executed DbCommand (4ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:24:14.9975 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:15.0044 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:24:16.8654 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:16.9801 - Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ContactTable] ([ContactId], [UserId])
+VALUES (@p0, @p1); -          
+
+2022-03-22 17:24:17.0005 - Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__contactId_0 -          
+
+2022-03-22 17:24:17.0465 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:17.0600 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:24:23.0605 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:23.0701 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:24:27.3615 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:27.3615 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:24:43.7411 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:24:43.7411 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:25:02.3722 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:02.3777 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:25:09.4757 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:09.4967 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[UserId], [c].[ContactId]
+FROM [ContactTable] AS [c]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 17:25:09.5197 - Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [ContactTable]
+WHERE [ContactId] = @p0 AND [UserId] = @p1;
+SELECT @@ROWCOUNT; -          
+
+2022-03-22 17:25:10.4471 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:10.4471 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:25:11.2414 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:11.2414 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[UserId], [c].[ContactId]
+FROM [ContactTable] AS [c]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 17:25:11.2530 - Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [ContactTable]
+WHERE [ContactId] = @p0 AND [UserId] = @p1;
+SELECT @@ROWCOUNT; -          
+
+2022-03-22 17:25:11.4468 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:11.4571 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:25:12.2804 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:12.2861 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[UserId], [c].[ContactId]
+FROM [ContactTable] AS [c]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 17:25:12.2861 - Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [ContactTable]
+WHERE [ContactId] = @p0 AND [UserId] = @p1;
+SELECT @@ROWCOUNT; -          
+
+2022-03-22 17:25:12.5939 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:12.6024 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:25:14.7109 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:14.7109 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[UserId], [c].[ContactId]
+FROM [ContactTable] AS [c]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 17:25:14.7109 - Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [ContactTable]
+WHERE [ContactId] = @p0 AND [UserId] = @p1;
+SELECT @@ROWCOUNT; -          
+
+2022-03-22 17:25:14.9072 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:14.9126 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:25:19.9940 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:20.0026 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:25:22.4508 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:22.4566 - Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ContactTable] ([ContactId], [UserId])
+VALUES (@p0, @p1); -          
+
+2022-03-22 17:25:22.4566 - Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__contactId_0 -          
+
+2022-03-22 17:25:22.4928 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:25:22.4928 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:26:22.3665 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:26:22.3823 - Executed DbCommand (5ms) [Parameters=[@__searchParameters_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE (((((([u].[EmailId] = @__searchParameters_0) OR ([u].[Name] = @__searchParameters_0)) OR ([u].[Gender] = @__searchParameters_0)) OR ([u].[DateOfBirth] = @__searchParameters_0)) OR ([u].[MobileNumber] = @__searchParameters_0)) OR ([u].[Interest] = @__searchParameters_0)) OR ([u].[Location] = @__searchParameters_0) -          
+
+2022-03-22 17:26:26.0687 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:26:26.0687 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 17:26:40.4293 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:26:40.4293 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 17:26:52.1436 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:26:52.1436 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE (((((([u].[EmailId] = @__searchParameters_0) OR ([u].[Name] = @__searchParameters_0)) OR ([u].[Gender] = @__searchParameters_0)) OR ([u].[DateOfBirth] = @__searchParameters_0)) OR ([u].[MobileNumber] = @__searchParameters_0)) OR ([u].[Interest] = @__searchParameters_0)) OR ([u].[Location] = @__searchParameters_0) -          
+
+2022-03-22 17:26:54.5654 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 17:26:54.5654 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE (((((([u].[EmailId] = @__searchParameters_0) OR ([u].[Name] = @__searchParameters_0)) OR ([u].[Gender] = @__searchParameters_0)) OR ([u].[DateOfBirth] = @__searchParameters_0)) OR ([u].[MobileNumber] = @__searchParameters_0)) OR ([u].[Interest] = @__searchParameters_0)) OR ([u].[Location] = @__searchParameters_0) -          
+
+2022-03-22 18:13:05.2028 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:06.0368 - Executed DbCommand (3ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-22 18:13:06.0755 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:06.0850 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:13:08.7440 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:08.7550 - Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ContactTable] ([ContactId], [UserId])
+VALUES (@p0, @p1); -          
+
+2022-03-22 18:13:08.7550 - Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__contactId_0 -          
+
+2022-03-22 18:13:19.2081 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:19.2216 - Executed DbCommand (4ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:13:22.4690 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:22.4738 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:13:25.9622 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:25.9622 - Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ContactTable] ([ContactId], [UserId])
+VALUES (@p0, @p1); -          
+
+2022-03-22 18:13:25.9751 - Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__contactId_0 -          
+
+2022-03-22 18:13:28.0139 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:28.0217 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:13:49.5363 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:49.5363 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:13:53.6359 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:53.6422 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[UserId], [c].[ContactId]
+FROM [ContactTable] AS [c]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 18:13:53.6422 - Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [ContactTable]
+WHERE [ContactId] = @p0 AND [UserId] = @p1;
+SELECT @@ROWCOUNT; -          
+
+2022-03-22 18:13:54.4379 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:54.4431 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:13:58.0648 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:58.0648 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[UserId], [c].[ContactId]
+FROM [ContactTable] AS [c]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-22 18:13:58.0648 - Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [ContactTable]
+WHERE [ContactId] = @p0 AND [UserId] = @p1;
+SELECT @@ROWCOUNT; -          
+
+2022-03-22 18:13:58.4466 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:13:58.4466 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:14:01.8176 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:14:01.8176 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:14:03.7677 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:14:03.7677 - Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ContactTable] ([ContactId], [UserId])
+VALUES (@p0, @p1); -          
+
+2022-03-22 18:14:03.7677 - Executed DbCommand (0ms) [Parameters=[@__contactId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__contactId_0 -          
+
+2022-03-22 18:14:03.7993 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:14:03.7993 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:14:36.2821 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:14:36.2899 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:15:09.7576 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:15:09.7576 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:15:27.6897 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:15:27.6897 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:15:53.2261 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:15:53.2366 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:16:43.4686 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:16:43.4721 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:18:11.4201 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:18:11.4319 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:18:17.0043 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:18:17.0043 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:18:19.2560 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:18:19.2560 - Executed DbCommand (3ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:27:28.0076 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:27:28.9276 - Executed DbCommand (6ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:27:33.6806 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:27:33.6806 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:27:35.9804 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:27:35.9804 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:27:54.6747 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:27:54.6747 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:27:59.6818 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:27:59.6818 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:28:01.9432 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:01.9432 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:28:10.3619 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:10.3619 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:28:15.4009 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:15.4099 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:28:17.5118 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:17.5181 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-22 18:28:25.6180 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:25.6180 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:29.3667 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:29.3786 - Executed DbCommand (3ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:34.3924 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:34.3924 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:36.5703 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:36.5703 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:43.8124 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:43.8169 - Executed DbCommand (2ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:48.8644 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:48.8644 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:51.3481 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:51.3481 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:28:59.1040 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:28:59.1040 - Executed DbCommand (0ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:29:04.2558 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:29:04.2558 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+
+2022-03-22 18:29:06.4518 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-22 18:29:06.4572 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] <> @__jwtUserId_0 -          
+

@@ -1,0 +1,6 @@
+projectKey=VigneshMQuovantis_SocialDirectory_Backend
+serverUrl=http://localhost:9050
+serverVersion=9.3.0.51899
+dashboardUrl=http://localhost:9050/dashboard?id=VigneshMQuovantis_SocialDirectory_Backend
+ceTaskId=AX-v3z7QM7bPUy8hfz3i
+ceTaskUrl=http://localhost:9050/api/ce/task?id=AX-v3z7QM7bPUy8hfz3i

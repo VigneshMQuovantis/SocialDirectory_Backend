@@ -1,0 +1,9 @@
+|
+sD:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\Controllers\ContactDetailsController.csutf-8w
+nD:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\Controllers\MyContactController.csutf-8r
+iD:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\Controllers\UserController.csutf-8_
+VD:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\Program.csutf-8•
+‰D:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\obj\Debug\net6.0\SocialDirectoryApplication.GlobalUsings.g.csutf-8—
+‹D:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8“
+‡D:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\obj\Debug\net6.0\SocialDirectoryApplication.AssemblyInfo.csutf-8¦
+šD:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\obj\Debug\net6.0\SocialDirectoryApplication.MvcApplicationPartsAssemblyInfo.csutf-8

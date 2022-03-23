@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.1.0.0",
+        "fileVersion": "4.1.0-3.22075.3 (592501cb)",
+        "semanticVersion": "4.1.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS7036",
+          "level": "error",
+          "message": "There is no argument given that corresponds to the required formal parameter 'logger' of 'MyContactController.MyContactController(IMyContactBL, ILogger<UserController>)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/BackendApplication/SocialDirectoryApplication/SocialDirectoryMyContactTesting/MyContactsTesting.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 30,
+                  "endLine": 17,
+                  "endColumn": 49
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "CS7036": {
+          "id": "CS7036",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS7036)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
