@@ -1,0 +1,100 @@
+2022-03-31 18:37:22.0379 - Application started. Press Ctrl+C to shut down. -          
+
+2022-03-31 18:37:22.1095 - Hosting environment: Development -          
+
+2022-03-31 18:37:22.1239 - Content root path: D:\BackendApplication\SocialDirectoryApplication\SocialDirectoryApplication\ -          
+
+2022-03-31 18:37:59.8918 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:38:03.7164 - Executed DbCommand (100ms) [Parameters=[@__model_EmailId_0='?' (Size = 4000), @__EncryptedPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__model_EmailId_0) AND ([u].[Password] = @__EncryptedPassword_1) -          
+
+2022-03-31 18:38:20.4596 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:38:20.4953 - Executed DbCommand (11ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__jwtUserId_0 -          
+
+2022-03-31 18:38:40.2145 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:38:40.3025 - Executed DbCommand (7ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-31 18:38:47.2215 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:38:47.2398 - Executed DbCommand (1ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64), @__contactId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE ([c].[UserId] = @__jwtUserId_0) AND ([c].[ContactId] = @__contactId_1) -          
+
+2022-03-31 18:38:54.4428 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:38:54.4634 - Executed DbCommand (9ms) [Parameters=[@__jwtUserId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContactId], [u].[UserId], [u].[EmailId], [u].[Name], [u].[Gender], [u].[DateOfBirth], [u].[MobileNumber], [u].[Interest], [u].[Location]
+FROM [UserTable] AS [u]
+INNER JOIN [ContactTable] AS [c] ON [u].[UserId] = [c].[ContactId]
+WHERE [c].[UserId] = @__jwtUserId_0 -          
+
+2022-03-31 18:39:15.2256 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:39:15.2640 - Executed DbCommand (8ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:39:28.7961 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:39:28.8022 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:39:42.4554 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:39:42.4554 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:39:53.6812 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:39:53.6927 - Executed DbCommand (6ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:40:01.8714 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:40:01.8785 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:40:16.9633 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:40:16.9633 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:40:28.6354 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:40:28.6354 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+
+2022-03-31 18:40:38.4952 - Entity Framework Core 6.0.3 initialized 'SocialDirectoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None -          
+
+2022-03-31 18:40:38.5061 - Executed DbCommand (1ms) [Parameters=[@__searchParameters_0='?' (Size = 4000), @__jwtUserId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[DateOfBirth], [u].[EmailId], [u].[Gender], [u].[Interest], [u].[Location], [u].[MobileNumber], [u].[Name], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ((((((([u].[EmailId] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) OR (([u].[Name] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Gender] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[DateOfBirth] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[MobileNumber] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Interest] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1))) OR (([u].[Location] = @__searchParameters_0) AND ([u].[UserId] <> @__jwtUserId_1)) -          
+

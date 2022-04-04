@@ -37,5 +37,14 @@ namespace BusinessLayer.Interfaces
         /// <param name="jwtUserId">The JWT user identifier.</param>
         /// <returns></returns>
         IEnumerable<MyProfileModel> MyProfile(long jwtUserId);
+
+        /// <summary>
+        /// Updates the profile.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <param name="profile">The profile.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        UpdateResponseModel UpdateProfile(UpdateModel model, long jwtUserId);
     }
 }

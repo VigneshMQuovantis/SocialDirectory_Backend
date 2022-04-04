@@ -85,5 +85,23 @@ namespace BusinessLayer.Services
                 throw;
             }
         }
+
+        /// <summary>
+        /// Updates the profile.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public UpdateResponseModel UpdateProfile(UpdateModel model, long jwtUserId)
+        {
+            try
+            {
+                return this.userRL.UpdateProfile(model, jwtUserId);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }

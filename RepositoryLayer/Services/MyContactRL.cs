@@ -216,7 +216,6 @@ namespace RepositoryLayer.Services
                                       user.MobileNumber,
                                       user.Interest,
                                       user.Location
-
                                   }).ToList();
                     IList<GetMyContactsModel> userList = new List<GetMyContactsModel>();
                     foreach (var contact in result)

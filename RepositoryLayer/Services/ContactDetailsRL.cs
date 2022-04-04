@@ -77,8 +77,8 @@ namespace RepositoryLayer.Services
         {
             try
             {
-                var allUsers = this.context.UserTable.Where(e=> e.EmailId == searchParameters || e.Name == searchParameters || e.Gender == searchParameters ||
-                               e.DateOfBirth == searchParameters || e.MobileNumber == searchParameters || e.Interest == searchParameters || e.Location == searchParameters).ToList();
+                var allUsers = this.context.UserTable.Where(e=> e.EmailId == searchParameters && e.UserId != jwtUserId || e.Name == searchParameters && e.UserId != jwtUserId || e.Gender == searchParameters && e.UserId != jwtUserId ||
+                               e.DateOfBirth == searchParameters && e.UserId != jwtUserId || e.MobileNumber == searchParameters && e.UserId != jwtUserId || e.Interest == searchParameters && e.UserId != jwtUserId || e.Location == searchParameters && e.UserId != jwtUserId).ToList();
                 if(allUsers.Count > 0)
                 {
                     IList<GetAllContacts> userList = new List<GetAllContacts>();

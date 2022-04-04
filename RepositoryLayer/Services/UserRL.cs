@@ -216,5 +216,48 @@ namespace RepositoryLayer.Services
                 throw new CustomException(HttpStatusCode.BadRequest, "Cannot get users due to some error");
             }
         }
+
+        /// <summary>
+        /// Updates the profile.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <param name="jwtUserId">The JWT user identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public UpdateResponseModel UpdateProfile(UpdateModel model, long jwtUserId)
+        {
+            try
+            {
+                var UpdateValidation = this.context.UserTable.FirstOrDefault(e => e.UserId == jwtUserId);
+                if (UpdateValidation != null)
+                {
+                    UpdateValidation.Name = model.Name;
+                    UpdateValidation.EmailId = model.EmailId;   
+                    UpdateValidation.Gender = model.Gender;
+                    UpdateValidation.DateOfBirth = model.DateOfBirth;
+                    UpdateValidation.MobileNumber = model.MobileNumber;
+                    UpdateValidation.Interest = model.Interest;
+                    UpdateValidation.Location = model.Location;
+
+                    this.context.SaveChanges();
+                }
+                
+                UpdateResponseModel response = new()
+                {
+                    Name = model.Name,
+                    EmailId = model.EmailId,
+                    Gender = model.Gender,
+                    DateOfBirth = model.DateOfBirth,
+                    MobileNumber = model.MobileNumber,
+                    Interest = model.Interest,
+                    Location = model.Location
+                };
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(HttpStatusCode.BadRequest, "Details Missing");
+            }
+        }
     }
 }

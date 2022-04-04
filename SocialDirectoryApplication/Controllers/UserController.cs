@@ -107,5 +107,27 @@ namespace SocialDirectoryApplication.Controllers
                 this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
             }
         }
+
+        [Authorize]
+        [HttpPut]
+        public IActionResult UpdateProfile(UpdateModel model)
+        {
+            try
+            {
+                long jwtUserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                UpdateResponseModel user = userBL.UpdateProfile(model, jwtUserId);
+                if (user == null)
+                {
+                    return NotFound(new { Success = false, message = "Cannot update profile" });
+                }
+                
+                return Ok(new { Success = true, message = "Profile updated Successfully ", user });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { ex.Message });
+                this.logger.Log(LogLevel.Error, ex.Message, ex, ex.Message, null);
+            }
+        }
     }
 }
